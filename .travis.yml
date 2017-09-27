@@ -59,8 +59,10 @@ branches:
     - expanded_ci
 
 before_install:
-  - gem update --system
   - gem update bundler
+
+cache:
+  bundler: true
 
 notifications:
   webhooks:
